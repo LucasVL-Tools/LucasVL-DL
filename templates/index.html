@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <link rel="stylesheet" href="/static/style.css">
+		<link rel="icon" type="image/x-icon" href="/static/favi.png">
+		<title>{{title}}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="{{title}}">
+		<meta property="og:title" content="{{title}}"/>
+		<meta property="og:url" content="{{domain}}"/>
+		<meta property="og:description" content="{{title}}"/>
+		<meta property="og:image" content="/static/favi.png"/>
+		<meta name="twitter:card" content="{{title}}"/>
+	</head>
+
+	<main>
+		<div class="container">
+			<form action="/watch">
+				<label for="v">Enter link:<br/></label>
+  				<input autocomplete="off" type="text" id="v" name="v"><br/><br/>
+				<div class="radiobuttons">
+				<div class="filetype">
+				<input type="radio" id="mp4" name="format" value="mp4">
+				<label for="mp4">mp4</label><br>
+				</div>
+                                <div class="filetype">
+				<input type="radio" id="mov" name="format" value="mov">
+                                <label for="mov">mov</label><br>
+				</div>
+                                <div class="filetype">
+				<input type="radio" id="wmv" name="format" value="wmv">
+                                <label for="wmv">wmv</label><br>
+				</div>
+                                <div class="filetype">
+				<input type="radio" id="webm" name="format" value="webm">
+                                <label for="webm">webm</label><br>
+				</div>
+                                <div class="filetype">
+				<input type="radio" id="avi" name="format" value="avi">
+                                <label for="avi">avi</label><br>
+				</div>
+                                <div class="filetype">
+				<input type="radio" id="mp3" name="format" value="mp3">
+				<label for="mp3">mp3</label><br>
+				</div>
+                                <div class="filetype">
+				<input type="radio" id="opus" name="format" value="opus">
+				<label for="opus">opus</label><br> 
+				</div>
+                                <div class="filetype">
+				<input type="radio" id="flac" name="format" value="flac">
+                                <label for="mp4">flac</label><br>
+				</div>
+                                <div class="filetype">
+				<input type="radio" id="m4a" name="format" value="m4a">
+                                <label for="m4a">m4a</label><br>
+				</div>
+                                <div class="filetype">
+				<input type="radio" id="wav" name="format" value="wav">
+                                <label for="wav">wav</label><br>
+				</div>
+				</div>
+				<br/>
+				<input class="submit" type="submit" style="font-weight: bold;" value="Download Video">
+			</form>
+		</div>
+		<footer>
+			<p>Made by <a href="https://lucasvl.nl/">LucasVL</a></p>
+		</footer>
+	</main>
+</html>
