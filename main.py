@@ -72,18 +72,12 @@ def dlvid(v=""):
 
     
     fileformat = request.args.get("format")
-
-    if fileformat == "opus": fileext = "opus"
-    elif fileformat == "mp3": fileext = "mp3"
-    elif fileformat == "m4a": fileext = "m4a"
-    elif fileformat == "wav": fileext = "wav"
-    elif fileformat == "flac": fileext = "flac"
-    elif fileformat == "avi": fileext = "avi"
-    elif fileformat == "webm": fileext = "webm"
-    elif fileformat == "wmv": fileext = "wmv"
-    elif fileformat == "mov": fileext = "mov"
-    else: fileext = "mp4"
-
+    
+    if fileformat in ["opus", "mp3", "m4a", "wav", "flac", "avi", "webm", "wmv", "mov"]:
+        fileext = fileformat
+    else:
+        fileext = "mp3"
+    
     if fileext not in ["mp4", "mov", "wmv", "webm", "avi"]:
         args = {
                 'format': 'bestaudio',
